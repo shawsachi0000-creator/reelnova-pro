@@ -1,0 +1,1072 @@
+/*=========================================
+  REELHUB PRO
+  PREMIUM CSS - PART 2
+=========================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0B0B0B;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+/* Colors */
+
+:root{
+
+--gold:#FFD700;
+
+--dark:#111111;
+
+--card:#1A1A1A;
+
+--white:#FFFFFF;
+
+}
+
+/* Header */
+
+header{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:80px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:0 60px;
+
+background:rgba(17,17,17,.85);
+
+backdrop-filter:blur(20px);
+
+z-index:999;
+
+border-bottom:1px solid rgba(255,215,0,.2);
+
+}
+
+/* Logo */
+
+.logo{
+
+display:flex;
+
+align-items:center;
+
+gap:10px;
+
+}
+
+.logo i{
+
+font-size:34px;
+
+color:var(--gold);
+
+}
+
+.logo h2{
+
+font-size:28px;
+
+color:#fff;
+
+}
+
+/* Navbar */
+
+nav{
+
+display:flex;
+
+gap:30px;
+
+}
+
+nav a{
+
+text-decoration:none;
+
+color:#fff;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:var(--gold);
+
+}
+
+/* Hero */
+
+.hero{
+
+width:100%;
+
+min-height:100vh;
+
+background:
+
+linear-gradient(rgba(0,0,0,.60),rgba(0,0,0,.60)),
+
+url("images/banner.jpg");
+
+background-size:cover;
+
+background-position:center;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+padding:120px 20px;
+
+}
+
+.overlay{
+
+max-width:900px;
+
+}
+
+.overlay h1{
+
+font-size:68px;
+
+font-weight:800;
+
+margin-bottom:20px;
+
+}
+
+.overlay p{
+
+font-size:22px;
+
+color:#ddd;
+
+line-height:1.8;
+
+margin-bottom:35px;
+
+}
+
+/* Search */
+
+.search-box{
+
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+gap:10px;
+
+}
+
+.search-box input{
+
+width:500px;
+
+max-width:100%;
+
+padding:18px;
+
+border:none;
+
+outline:none;
+
+border-radius:50px;
+
+font-size:16px;
+
+}
+
+.search-box button{
+
+padding:18px 35px;
+
+border:none;
+
+background:var(--gold);
+
+color:#111;
+
+font-size:16px;
+
+font-weight:700;
+
+border-radius:50px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.search-box button:hover{
+
+transform:scale(1.05);
+
+}
+
+/* Section */
+
+section{
+
+padding:90px 8%;
+
+}
+
+.section-title{
+
+text-align:center;
+
+font-size:42px;
+
+margin-bottom:50px;
+
+color:var(--gold);
+
+font-weight:700;
+
+}
+/*=========================================
+  REELHUB PRO
+  PREMIUM CSS - PART 3
+  LUXURY CARDS
+=========================================*/
+
+/* Card Container */
+
+.card-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+/* Premium Glass Card */
+
+.card{
+
+    background:rgba(255,255,255,.06);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,215,0,.18);
+
+    border-radius:25px;
+
+    padding:35px 25px;
+
+    text-align:center;
+
+    transition:.4s;
+
+    cursor:pointer;
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+/* Golden Light Effect */
+
+.card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-100%;
+
+    width:100%;
+
+    height:100%;
+
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,215,0,.18),
+        transparent
+    );
+
+    transition:.7s;
+
+}
+
+.card:hover::before{
+
+    left:100%;
+
+}
+
+/* Hover */
+
+.card:hover{
+
+    transform:translateY(-12px);
+
+    border-color:#FFD700;
+
+    box-shadow:
+    0 20px 45px rgba(0,0,0,.35),
+    0 0 25px rgba(255,215,0,.30);
+
+}
+
+/* Icon */
+
+.card i{
+
+    font-size:65px;
+
+    color:#FFD700;
+
+    margin-bottom:20px;
+
+}
+
+/* Title */
+
+.card h3{
+
+    font-size:26px;
+
+    color:#FFFFFF;
+
+    margin-bottom:12px;
+
+}
+
+/* Description */
+
+.card p{
+
+    color:#CCCCCC;
+
+    font-size:16px;
+
+    line-height:1.8;
+
+}
+
+/* Button */
+
+.btn{
+
+    display:inline-block;
+
+    margin-top:22px;
+
+    padding:14px 30px;
+
+    background:#FFD700;
+
+    color:#111111;
+
+    text-decoration:none;
+
+    border-radius:50px;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    background:#FFFFFF;
+
+    transform:scale(1.05);
+
+}
+
+/* Platform Image */
+
+.card img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+    border-radius:18px;
+
+    margin-bottom:20px;
+
+}
+/*=========================================
+  REELHUB PRO
+  PREMIUM CSS - PART 4
+  DOWNLOAD & EDITOR SECTION
+=========================================*/
+
+/* Download Section */
+
+.features{
+    background:#101010;
+    position:relative;
+}
+
+.features::before{
+    content:"";
+    position:absolute;
+    width:250px;
+    height:250px;
+    background:#FFD700;
+    filter:blur(180px);
+    opacity:.08;
+    top:-100px;
+    left:-100px;
+}
+
+/* Video Editor Section */
+
+.editor{
+    background:#0B0B0B;
+    position:relative;
+}
+
+.editor::after{
+    content:"";
+    position:absolute;
+    width:300px;
+    height:300px;
+    background:#FFD700;
+    filter:blur(200px);
+    opacity:.08;
+    bottom:-120px;
+    right:-120px;
+}
+
+/* Tool Card */
+
+.tool-card{
+
+    background:#171717;
+
+    border:1px solid rgba(255,215,0,.15);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    text-align:center;
+
+    transition:.4s;
+
+}
+
+.tool-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#FFD700;
+
+    box-shadow:0 0 30px rgba(255,215,0,.25);
+
+}
+
+.tool-card i{
+
+    font-size:55px;
+
+    color:#FFD700;
+
+    margin-bottom:20px;
+
+}
+
+.tool-card h3{
+
+    font-size:24px;
+
+    margin-bottom:10px;
+
+    color:#fff;
+
+}
+
+.tool-card p{
+
+    color:#cfcfcf;
+
+    line-height:1.7;
+
+}
+
+/* Premium Button */
+
+.gold-btn{
+
+display:inline-block;
+
+margin-top:25px;
+
+padding:15px 35px;
+
+background:#FFD700;
+
+color:#111;
+
+font-weight:700;
+
+text-decoration:none;
+
+border-radius:50px;
+
+transition:.3s;
+
+}
+
+.gold-btn:hover{
+
+background:#fff;
+
+transform:scale(1.08);
+
+}
+
+/* Premium Heading */
+
+.section-title{
+
+position:relative;
+
+display:inline-block;
+
+left:50%;
+
+transform:translateX(-50%);
+
+padding-bottom:15px;
+
+}
+
+.section-title::after{
+
+content:"";
+
+position:absolute;
+
+bottom:0;
+
+left:50%;
+
+transform:translateX(-50%);
+
+width:80px;
+
+height:4px;
+
+background:#FFD700;
+
+border-radius:20px;
+
+}
+/*=========================================
+  REELHUB PRO
+  PREMIUM CSS - PART 5
+  FOOTER • CONTACT • SOCIAL
+=========================================*/
+
+/* Contact Section */
+
+.contact{
+
+    padding:100px 8%;
+
+    background:#111111;
+
+}
+
+.contact-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+
+    gap:40px;
+
+    align-items:center;
+
+}
+
+/* Contact Form */
+
+.contact-form{
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,215,0,.20);
+
+    border-radius:25px;
+
+    padding:35px;
+
+}
+
+.contact-form input,
+
+.contact-form textarea{
+
+    width:100%;
+
+    padding:18px;
+
+    margin-bottom:20px;
+
+    background:#1A1A1A;
+
+    color:#fff;
+
+    border:1px solid rgba(255,215,0,.15);
+
+    border-radius:12px;
+
+    outline:none;
+
+    font-size:16px;
+
+}
+
+.contact-form textarea{
+
+    resize:none;
+
+    min-height:170px;
+
+}
+
+.contact-form input:focus,
+
+.contact-form textarea:focus{
+
+    border-color:#FFD700;
+
+    box-shadow:0 0 12px rgba(255,215,0,.25);
+
+}
+
+/* Submit Button */
+
+.contact-form button{
+
+    width:100%;
+
+    padding:18px;
+
+    background:#FFD700;
+
+    color:#111;
+
+    border:none;
+
+    border-radius:50px;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.contact-form button:hover{
+
+    transform:translateY(-3px);
+
+    background:#ffffff;
+
+}
+
+/* Footer */
+
+footer{
+
+    background:#090909;
+
+    padding:50px 8%;
+
+    text-align:center;
+
+    border-top:1px solid rgba(255,215,0,.12);
+
+}
+
+/* Footer Logo */
+
+.footer-logo{
+
+    font-size:30px;
+
+    font-weight:700;
+
+    color:#FFD700;
+
+    margin-bottom:20px;
+
+}
+
+/* Footer Text */
+
+footer p{
+
+    color:#cfcfcf;
+
+    line-height:1.8;
+
+    font-size:15px;
+
+}
+
+/* Social Icons */
+
+.social-icons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:18px;
+
+    margin:30px 0;
+
+}
+
+.social-icons a{
+
+    width:55px;
+
+    height:55px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-decoration:none;
+
+    color:#FFD700;
+
+    border:1px solid rgba(255,215,0,.20);
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.04);
+
+    transition:.35s;
+
+}
+
+.social-icons a:hover{
+
+    background:#FFD700;
+
+    color:#111111;
+
+    transform:translateY(-8px) rotate(360deg);
+
+    box-shadow:0 0 20px rgba(255,215,0,.35);
+
+}
+
+/* Copyright */
+
+.copyright{
+
+    margin-top:20px;
+
+    color:#888;
+
+    font-size:14px;
+
+}
+/*=========================================
+  REELHUB PRO
+  PREMIUM CSS - PART 6
+  RESPONSIVE DESIGN
+=========================================*/
+
+/* Tablet */
+
+@media (max-width:992px){
+
+header{
+
+padding:18px 30px;
+
+}
+
+nav{
+
+display:none;
+
+}
+
+.menu-btn{
+
+display:block;
+
+font-size:28px;
+
+color:#FFD700;
+
+cursor:pointer;
+
+}
+
+.logo h2{
+
+font-size:24px;
+
+}
+
+.overlay h1{
+
+font-size:48px;
+
+}
+
+.overlay p{
+
+font-size:18px;
+
+}
+
+.search-box{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+.search-box input{
+
+width:100%;
+
+max-width:650px;
+
+}
+
+.search-box button{
+
+width:100%;
+
+max-width:300px;
+
+}
+
+.card-container{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+header{
+
+height:70px;
+
+padding:15px 20px;
+
+}
+
+.hero{
+
+padding:120px 20px 70px;
+
+}
+
+.overlay h1{
+
+font-size:36px;
+
+line-height:1.3;
+
+}
+
+.overlay p{
+
+font-size:16px;
+
+line-height:1.8;
+
+}
+
+.section-title{
+
+font-size:30px;
+
+}
+
+.card-container{
+
+grid-template-columns:1fr;
+
+gap:20px;
+
+}
+
+.card{
+
+padding:28px;
+
+}
+
+.card i{
+
+font-size:50px;
+
+}
+
+.card h3{
+
+font-size:22px;
+
+}
+
+.search-box input{
+
+padding:16px;
+
+font-size:15px;
+
+}
+
+.search-box button{
+
+padding:16px;
+
+font-size:15px;
+
+}
+
+.contact-container{
+
+grid-template-columns:1fr;
+
+}
+
+.social-icons{
+
+gap:14px;
+
+}
+
+.social-icons a{
+
+width:48px;
+
+height:48px;
+
+font-size:18px;
+
+}
+
+}
+
+/* Small Mobile */
+
+@media (max-width:480px){
+
+.logo h2{
+
+font-size:20px;
+
+}
+
+.overlay h1{
+
+font-size:30px;
+
+}
+
+.overlay p{
+
+font-size:15px;
+
+}
+
+.section-title{
+
+font-size:26px;
+
+}
+
+.card{
+
+padding:22px;
+
+}
+
+footer{
+
+padding:35px 20px;
+
+}
+
+.contact-form{
+
+padding:22px;
+
+}
+
+}
+
+/* Hide Menu Button on Desktop */
+
+.menu-btn{
+
+display:none;
+
+}
