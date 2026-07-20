@@ -1070,3 +1070,566 @@ padding:22px;
 display:none;
 
 }
+/*=========================================
+  REELHUB PRO
+  PREMIUM CSS - PART 7
+  ANIMATIONS & EFFECTS
+=========================================*/
+
+/* Fade In Animation */
+
+@keyframes fadeUp{
+
+0%{
+opacity:0;
+transform:translateY(60px);
+}
+
+100%{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* Zoom Animation */
+
+@keyframes zoomIn{
+
+0%{
+opacity:0;
+transform:scale(.8);
+}
+
+100%{
+opacity:1;
+transform:scale(1);
+}
+
+}
+
+/* Floating Animation */
+
+@keyframes floating{
+
+0%,100%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-12px);
+}
+
+}
+
+/* Hero */
+
+.hero .overlay{
+
+animation:fadeUp 1s ease;
+
+}
+
+/* Cards */
+
+.card{
+
+animation:zoomIn .8s ease;
+
+}
+
+/* Icon Animation */
+
+.card i{
+
+animation:floating 3s infinite;
+
+}
+
+/* Smooth Hover */
+
+.card,
+button,
+.btn,
+.gold-btn,
+.social-icons a{
+
+transition:.35s ease;
+
+}
+
+/* Premium Shadow */
+
+.card:hover{
+
+box-shadow:
+0 15px 40px rgba(0,0,0,.4),
+0 0 30px rgba(255,215,0,.25);
+
+}
+
+/* Golden Border Glow */
+
+.card:hover{
+
+border:1px solid #FFD700;
+
+}
+
+/* Scroll Bar */
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#111;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#FFD700;
+
+border-radius:50px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+background:#ffea70;
+
+}
+
+/* Text Selection */
+
+::selection{
+
+background:#FFD700;
+
+color:#111;
+
+}
+
+/* Smooth Image Hover */
+
+img{
+
+transition:.4s;
+
+}
+
+img:hover{
+
+transform:scale(1.03);
+
+}
+
+/* Premium Section Spacing */
+
+.features,
+.editor,
+.contact{
+
+position:relative;
+overflow:hidden;
+
+}
+/*=========================================
+  REELHUB PRO
+  PREMIUM CSS - PART 8
+  DARK MODE • LOADER • GLOW EFFECTS
+=========================================*/
+
+/* Background Glow */
+
+body::before{
+    content:"";
+    position:fixed;
+    top:-200px;
+    left:-200px;
+    width:500px;
+    height:500px;
+    background:#FFD700;
+    border-radius:50%;
+    filter:blur(220px);
+    opacity:.08;
+    z-index:-2;
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    bottom:-200px;
+    right:-200px;
+    width:500px;
+    height:500px;
+    background:#FFD700;
+    border-radius:50%;
+    filter:blur(220px);
+    opacity:.08;
+    z-index:-2;
+}
+
+/* Premium Loader */
+
+.loader{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100vh;
+
+    background:#0b0b0b;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:99999;
+
+}
+
+.loader span{
+
+    width:80px;
+
+    height:80px;
+
+    border:6px solid rgba(255,255,255,.2);
+
+    border-top:6px solid #FFD700;
+
+    border-radius:50%;
+
+    animation:loaderRotate 1s linear infinite;
+
+}
+
+@keyframes loaderRotate{
+
+100%{
+
+transform:rotate(360deg);
+
+}
+
+}
+
+/* Floating Button */
+
+.floating-btn{
+
+position:fixed;
+
+bottom:30px;
+
+right:30px;
+
+width:60px;
+
+height:60px;
+
+background:#FFD700;
+
+color:#111;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+border-radius:50%;
+
+font-size:24px;
+
+text-decoration:none;
+
+box-shadow:0 10px 25px rgba(255,215,0,.35);
+
+transition:.35s;
+
+z-index:999;
+
+}
+
+.floating-btn:hover{
+
+transform:translateY(-8px) scale(1.08);
+
+background:#fff;
+
+}
+
+/* Glass Box */
+
+.glass{
+
+background:rgba(255,255,255,.06);
+
+backdrop-filter:blur(20px);
+
+border:1px solid rgba(255,215,0,.20);
+
+border-radius:25px;
+
+}
+
+/* Gradient Text */
+
+.gold-text{
+
+background:linear-gradient(90deg,#FFD700,#FFF4B0,#FFD700);
+
+-webkit-background-clip:text;
+  /*=========================================
+  REELHUB PRO
+  PREMIUM CSS - PART 9
+  FINAL UI EFFECTS
+=========================================*/
+
+/* Premium Buttons */
+
+.btn,
+.gold-btn,
+.search-box button{
+
+    position:relative;
+    overflow:hidden;
+    transition:0.4s ease;
+
+}
+
+.btn::before,
+.gold-btn::before,
+.search-box button::before{
+
+    content:"";
+    position:absolute;
+    top:0;
+    left:-100%;
+    width:100%;
+    height:100%;
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.35),
+        transparent
+    );
+    transition:.6s;
+
+}
+
+.btn:hover::before,
+.gold-btn:hover::before,
+.search-box button:hover::before{
+
+    left:100%;
+
+}
+
+/* Hero Title */
+
+.overlay h1{
+
+    background:linear-gradient(
+        90deg,
+        #FFD700,
+        #FFF7C0,
+        #FFD700
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+}
+
+/* Section Animation */
+
+.features,
+.editor,
+.contact{
+
+    animation:fadeUp 1s ease;
+
+}
+
+/* Footer */
+
+footer{
+
+    position:relative;
+    overflow:hidden;
+
+}
+
+footer::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-80px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:250px;
+
+    height:250px;
+
+    background:#FFD700;
+
+    opacity:.08;
+
+    filter:blur(120px);
+
+}
+
+/* Social Hover */
+
+.social-icons a:hover{
+
+    box-shadow:
+    0 0 15px rgba(255,215,0,.4),
+    0 0 35px rgba(255,215,0,.25);
+
+}
+
+/* Input Hover */
+
+input:hover,
+textarea:hover{
+
+    border-color:#FFD700;
+
+}
+
+input:focus,
+textarea:focus{
+
+    box-shadow:0 0 15px rgba(255,215,0,.20);
+
+}
+
+/* Card Border Animation
+  /*=========================================
+  REELHUB PRO
+  PREMIUM CSS - PART 10
+  FINAL LUXURY FINISH
+=========================================*/
+
+/* Main Container */
+
+.container{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+}
+
+/* Premium Section */
+
+.section{
+    padding:100px 0;
+}
+
+/* Golden Line */
+
+.line{
+    width:120px;
+    height:4px;
+    background:#FFD700;
+    margin:20px auto 60px;
+    border-radius:50px;
+}
+
+/* Hover Lift */
+
+.hover-up{
+    transition:.4s ease;
+}
+
+.hover-up:hover{
+    transform:translateY(-15px);
+}
+
+/* Premium Border */
+
+.border-gold{
+    border:2px solid rgba(255,215,0,.20);
+    border-radius:25px;
+}
+
+/* Glass Background */
+
+.glass-bg{
+    background:rgba(255,255,255,.05);
+    backdrop-filter:blur(20px);
+    border:1px solid rgba(255,215,0,.15);
+}
+
+/* Gradient Background */
+
+.gradient-bg{
+    background:linear-gradient(
+        135deg,
+        #111111,
+        #1A1A1A,
+        #111111
+    );
+}
+
+/* Image Style */
+
+.image-box{
+    overflow:hidden;
+    border-radius:20px;
+}
+
+.image-box img{
+    width:100%;
+    display:block;
+    transition:.5s;
+}
+
+.image-box:hover img{
+    transform:scale(1.1);
+}
+
+/* Premium Table */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table th{
+    background:#FFD700;
+    color:#111;
+    padding:15px;
+}
+
+table td{
+    padding:15px;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+/* Alert Box */
+
+.alert{
+    background:#1A1A1A;
+    border-left:5px solid #FFD700;
+    padding:20px;
+   
